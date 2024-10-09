@@ -16,3 +16,72 @@ img,
 video {
   display: block;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  font-family: inter;
+  h2 {
+    font-family: "Hammersmith One";
+    font-size: 20px;
+  }
+  p {
+    font-size: 14px;
+  }
+}
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  img {
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (min-width: 576px) {
+  .logos {
+    justify-content: space-between;
+  }
+}
+.nouvelles-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+@media (min-width: 576px) {
+  .download-title,
+  .description-title {
+    font-size: 28px;
+  }
+}
+@media (min-width: 992px) {
+  .download-title,
+  .description-title {
+    font-size: 36px;
+  }
+}
+@media (min-width: 992px) {
+  .description-content {
+    font-size: 20px;
+    text-align: left;
+  }
+  .logos {
+    justify-content: left;
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+@media (min-width: 0px) and (max-width: 991px) {
+  .download-content.desktop {
+    display: none;
+  }
+}
